@@ -18,3 +18,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: url(/img/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0% -50%;
+    background-color: var(--very-dark-blue);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 414px) {
+    
+    body {
+        background-image: url(/img/bg-mobile.png);
+        background-position: 0% 0%;
+    }
+}
