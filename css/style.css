@@ -7,6 +7,7 @@
     --grayish-blue: hsl(229, 7%, 55%);
     --dark-blue: hsl(228, 56%, 26%);
     --very-dark-blue: hsl(229, 57%, 11%);
+    --white: #ffffff;
     
     /* Widths */
     --mobile-width: 375px;
@@ -30,6 +31,55 @@ body {
 /* General Styling */
 .container {
     background-color: var(--dark-blue);
+}
+
+/* Card 1 Styling */
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.card-1 div img {
+    margin-bottom: 10px;
+}
+
+.triple-icons {
+    display: flex;
+}
+
+.triple-icons :nth-child(1) img {
+    background-color: var(--very-dark-blue);
+    padding: 10px 10px;
+    margin-right: 10px;
+}
+.triple-icons :nth-child(2) img {
+    background-color: var(--very-dark-blue);
+    padding: 12px 10px;
+    margin-right: 10px;
+}
+.triple-icons :nth-child(3) img {
+    background-color: var(--very-dark-blue);
+    padding: 14px 10px;
+}
+
+/* Card 2 Styling */
+.card-2 {
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px 0px; 
+}
+
+/* Card 3 Small Styling */
+.card-3-small {
+    background-color: var(--white);
+    width: 10%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0px;
 }
 
 /* Media Queries */
