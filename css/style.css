@@ -24,6 +24,12 @@ body {
     background-repeat: no-repeat;
     background-position: 0% -50%;
     background-color: var(--very-dark-blue);
+    font-size: 14px;
+}
+
+/* General Styling */
+.container {
+    background-color: var(--dark-blue);
 }
 
 /* Media Queries */
