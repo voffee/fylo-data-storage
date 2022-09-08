@@ -1,6 +1,7 @@
 :root {
     /* Primary Colors */
-    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --gradient-1: hsl(6, 100%, 80%);
+    --gradient-2: hsl(335, 100%, 65%);
     
     /* Neutral Colors */
     --pale-blue: hsl(243, 100%, 93%);
@@ -23,9 +24,14 @@
 body {
     background-image: url(/img/bg-desktop.png);
     background-repeat: no-repeat;
-    background-position: 0% -50%;
+    background-position: 0% 100%;
     background-color: var(--very-dark-blue);
     font-size: 14px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 /* General Styling */
@@ -38,8 +44,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    width: 25%;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 10px 100px 10px 10px;
     margin: 10px 0px;
 }
 
@@ -49,28 +55,38 @@ body {
 
 .triple-icons {
     display: flex;
+    gap: 1.5rem;
+    /* Use gap command instead of adding margin to elements */
 }
 
 .triple-icons :nth-child(1) img {
     background-color: var(--very-dark-blue);
-    padding: 10px 10px;
-    margin-right: 10px;
+    padding: 10px 12px;
+    border-radius: 10%;
 }
 .triple-icons :nth-child(2) img {
     background-color: var(--very-dark-blue);
     padding: 12px 10px;
-    margin-right: 10px;
+    border-radius: 10%;
 }
 .triple-icons :nth-child(3) img {
     background-color: var(--very-dark-blue);
     padding: 14px 10px;
+    border-radius: 10%;
 }
 
 /* Card 2 Styling */
 .card-2 {
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
-    margin: 10px 0px; 
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+.card-2 progress {
+    /* background-color: aqua; */
+    /* background-color: aqua; */
+    accent-color: blue;
 }
 
 /* Card 3 Small Styling */
@@ -87,6 +103,7 @@ body {
     
     body {
         background-image: url(/img/bg-mobile.png);
-        background-position: 0% 0%;
+        background-position: 50% 10%;
+        background-size: cover;
     }
 }
