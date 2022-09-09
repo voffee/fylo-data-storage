@@ -28,7 +28,6 @@ body {
     background-color: var(--very-dark-blue);
     font-size: 14px;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -36,6 +35,13 @@ body {
 
 /* General Styling */
 .container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.card {
     background-color: var(--dark-blue);
 }
 
@@ -54,12 +60,12 @@ body {
 }
 
 .triple-icons {
-    /* display: flex;
-    gap: 1.5rem; */
+    display: flex;
+    gap: 1.5rem;
     /* Use gap command instead of adding margin to elements */
 }
 
-/* .triple-icons :nth-child(1) img {
+.triple-icons :nth-child(1) img {
     background-color: var(--very-dark-blue);
     padding: 10px 12px;
     border-radius: 10%;
@@ -73,7 +79,7 @@ body {
     background-color: var(--very-dark-blue);
     padding: 14px 10px;
     border-radius: 10%;
-} */
+}
 
 /* Card 2 Styling */
 .card-2 {
@@ -81,12 +87,6 @@ body {
     border-radius: 10px;
     padding: 20px;
     margin: 10px 0px;
-}
-
-.card-2 progress {
-    /* background-color: aqua; */
-    /* background-color: aqua; */
-    accent-color: blue;
 }
 
 /* Card 3 Small Styling */
