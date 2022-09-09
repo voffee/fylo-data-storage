@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,41 +14,47 @@
 </head>
 <body>
     <main>
-        <div class="container card-1">
-            <div>
-                <img src="/img/logo.svg" alt="">
-                <!-- Add aria text? -->
+        <div class="container">
+            <div class="card card-1">
+                <div>
+                    <img src="/img/logo.svg" alt="">
+                    <!-- Add aria text? -->
+                    
+                    <div class="triple-icons">
+                        <a href="#" class="btn">
+                            <img src="/img/icon-document.svg" alt="">
+                        </a>
+                        <a href="#" class="btn">
+                            <img src="/img/icon-folder.svg" alt="">
+                        </a>
+                        <a href="#" class="btn">
+                            <img src="/img/icon-upload.svg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
             
-            <div class="triple-icons">
-                <a href="#" class="btn">
-                    <img src="/img/icon-document.svg" alt="">
-                </a>
-                <a href="#" class="btn">
-                    <img src="/img/icon-folder.svg" alt="">
-                </a>
-                <a href="#" class="btn">
-                    <img src="/img/icon-upload.svg" alt="">
-                </a>
+            <div class="card card-2">
+                <div class="description">
+                    <p>You've used <span class="used-storage">815 GB</span> of your storage</p>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress-bar-color"><div class="ball"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-text">
+                    <p class="text"><span>0 GB</span></p>
+                    <p class="text"><span class="total-storage">1000 GB</span></p>
+                </div>
+                
+                <div>
+                    <p>0 GB</p>
+                    <p>1000 GB</p>
+                </div>
             </div>
         </div>
-        
-        <div class="container card-2">
-            <div class="description">
-                <p>You've used <span>815 GB</span> of your storage</p>
-                <label for="file"></label>
-                <progress id="file" value="32" max="100"> 32%</progress>
-            </div>
-            <div>
-                <p>0 GB</p>
-                <p>1000 GB</p>
-            </div>
-        </div>
-        
-        <!-- <div class="card-3-small">
-            <p><span>185</span> GB LEFT</p>
-        </div> -->
     </main>
-    
 </body>
 </html>
