@@ -225,4 +225,31 @@ body {
     .triangle {
         display: none;
     }
+    
+    
 }
+
+
+@media only screen and (max-width: 768px) {
+    .card-3 {
+        left: 55%;
+        top: 39%;
+    }
+    
+    .position-card-3 {
+        position: relative;
+        left: 100%;
+    }
+    
+    .triangle {
+        display: block;
+        border-top: 10px solid white;
+        border-right: 10px solid white;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        top: 85%;
+        right: 0%;
+        z-index: 2;
+    }
+}
+
